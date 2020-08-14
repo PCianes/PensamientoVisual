@@ -8,14 +8,14 @@ const PostMaker = ({ data }) => (
   <section className="home-posts">
     <h2>
       Últimos artículos del <strong>Blog</strong>{' '}
-      <span class="icon -right">
+      <span className="icon -right">
         <RiArrowDownLine />
       </span>
     </h2>
     <div className="grids col-1 sm-2 lg-3">{data}</div>
     <Link className="button" to="/blog">
       Ver todos
-      <span class="icon -right">
+      <span className="icon -right">
         <RiArrowRightSLine />
       </span>
     </Link>

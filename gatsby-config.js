@@ -10,7 +10,7 @@ const netlifyCmsPaths = {
   },
 }
 
-const settings = require("./src/util/site.json")
+const settings = require('./src/util/site.json')
 
 module.exports = {
   siteMetadata: settings.meta,
@@ -45,14 +45,14 @@ module.exports = {
               showCaptions: true,
               linkImagesToOriginal: false,
               tracedSVG: true,
-              loading: "lazy",
+              loading: 'lazy',
             },
           },
           `gatsby-remark-responsive-iframe`,
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: "language-",
+              classPrefix: 'language-',
               inlineCodeMarker: null,
               aliases: {},
               showLineNumbers: false,
@@ -73,15 +73,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Foundation`,
-        short_name: `Foundation`,
+        name: `Pensamiento Visual`,
+        short_name: `Formación Pensamiento Visual`,
         start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
+        background_color: `#ffffff`,
+        theme_color: `#000000`,
         display: `standalone`,
-        icon: `static/assets/stackrole.png`,
+        icon: `static/maskable_icon.png`,
       },
     },
-    "gatsby-plugin-offline",
+    'gatsby-plugin-offline',
   ],
 }

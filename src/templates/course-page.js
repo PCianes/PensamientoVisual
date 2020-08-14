@@ -70,12 +70,6 @@ const CoursePage = ({ data }) => {
       </div>
       <div className="blog-post-content">
         <article dangerouslySetInnerHTML={{ __html: html }} />
-        <Link to={frontmatter.cta.ctaLink} className="button">
-          {frontmatter.cta.ctaText}
-          <span class="icon -right">
-            <RiArrowRightSLine />
-          </span>
-        </Link>
       </div>
     </Layout>
   )

@@ -45,7 +45,7 @@ const Pagination = props => (
             <span className="icon -left">
               <RiArrowLeftLine />
             </span>{' '}
-            Previous
+            Anteriores
           </Link>
         </li>
       )}
@@ -62,7 +62,7 @@ const Pagination = props => (
       {!props.isLast && (
         <li>
           <Link to={props.nextPage} rel="next">
-            Next{' '}
+            Siguientes{' '}
             <span className="icon -right">
               <RiArrowRightLine />
             </span>
@@ -99,9 +99,9 @@ class BlogIndex extends React.Component {
     return (
       <Layout className="blog-page">
         <SEO
-          title={'Blog — Page ' + currentPage + ' of ' + numPages}
+          title={'Blog — Page ' + currentPage + ' de ' + numPages}
           description={
-            'Stackrole base blog page ' + currentPage + ' of ' + numPages
+            'Blog Pensamiento Visual ' + currentPage + ' de ' + numPages
           }
         />
         <h1>Blog</h1>

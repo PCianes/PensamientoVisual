@@ -271,8 +271,8 @@ article img {
   line-height: 1;
   transition: background 0.3s linear;
   &:hover {
-    background-color: var(--button-color);
-    color: var(--button-alternate-color);
+    background-color: var(--nav-link-hover-bg);
+    color: var(--button-color);
   }
   &.-outline {
     color: var(--primary-color);
