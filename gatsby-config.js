@@ -42,12 +42,15 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1024,
+              withWebp: true,
               showCaptions: true,
               linkImagesToOriginal: false,
               tracedSVG: true,
+              quality: 70,
               loading: 'lazy',
             },
           },
+          `gatsby-plugin-netlify-cms-paths`,
           `gatsby-remark-responsive-iframe`,
           {
             resolve: `gatsby-remark-prismjs`,

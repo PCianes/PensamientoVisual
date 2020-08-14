@@ -30,7 +30,7 @@ export default function BlogListHome() {
           allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___date] }
             filter: { frontmatter: { type: { eq: "post" } } }
-            limit: 24
+            limit: 21
           ) {
             edges {
               node {
@@ -42,7 +42,7 @@ export default function BlogListHome() {
                   title
                   featuredImage {
                     childImageSharp {
-                      fluid(maxWidth: 540, maxHeight: 360, quality: 80) {
+                      fluid(maxWidth: 540, maxHeight: 360, quality: 70) {
                         ...GatsbyImageSharpFluid
                         ...GatsbyImageSharpFluidLimitPresentationSize
                       }
