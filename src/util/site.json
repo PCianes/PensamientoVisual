@@ -1,11 +1,10 @@
 {
   "meta": {
-    "title": "Foundation",
+    "title": "Pensamiento Visual",
     "titleTemplate": "%s",
-    "description": "A starter to launch your blazing fast personal website and a blog, Built with Gatsby and Netlify CMS. Made with ❤ by Stackrole",
-    "siteUrl": "https://foundation.stackrole.com",
-    "image": "/assets/stackrole.png",
-    "twitterUsername": "@stackrole"
-  },
-  "ga": "UA-XXXXXXXXX-X"
+    "description": "Pensamiento Visual para profesionales del conocimiento: aumenta y transmite mejor tu conocimiento e ideas.",
+    "siteUrl": "https://www.pensamientovisual.es/",
+    "image": "/assets/favicon-pensamiento-visual.jpg",
+    "twitterUsername": "@PabloCianes"
+  }
 }
