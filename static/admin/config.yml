@@ -102,9 +102,22 @@ collections:
               label: 'Slug',
               name: 'slug',
               widget: 'hidden',
-              default: '/curso-pensamiento-visual',
+              default: '/suscripcion',
             }
           - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Tagline', name: 'tagline', widget: 'string' }
+          - { label: 'Tagline2', name: 'tagline2', widget: 'string' }
+          - { label: 'Featured Image', name: 'featuredImage', widget: 'image' }
+          - label: 'CTA'
+            name: 'cta'
+            widget: 'object'
+            fields:
+              - name: 'ctaText'
+                label: 'CTA text'
+                widget: 'string'
+              - name: 'ctaLink'
+                label: 'CTA Link'
+                widget: 'string'
           - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: settings
     label: Settings
