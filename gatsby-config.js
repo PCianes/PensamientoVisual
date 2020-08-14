@@ -77,7 +77,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Pensamiento Visual`,
-        short_name: `Formación Pensamiento Visual`,
+        short_name: `Pensamiento Visual`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#000000`,
