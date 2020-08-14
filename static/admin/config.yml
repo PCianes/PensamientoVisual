@@ -24,12 +24,7 @@ collections:
     summary: '{{title}} — {{year}}/{{month}}/{{day}}'
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {
-          label: 'Template',
-          name: 'template',
-          widget: 'hidden',
-          default: 'blog-post',
-        }
+      - { label: 'Template', name: 'type', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
       - {
           label: 'Slug',
