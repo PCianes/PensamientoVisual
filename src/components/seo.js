@@ -17,10 +17,12 @@ const SEO = ({ title, description, image, article }) => {
     twitterUsername,
   } = site.siteMetadata
 
+  const imageSrc = image && image.src ? image.src : image
+
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${siteUrl}${image || defaultImage}`,
+    image: `${siteUrl}${imageSrc || defaultImage}`,
     url: `${siteUrl}${pathname}`,
   }
 
@@ -58,7 +60,7 @@ const SEO = ({ title, description, image, article }) => {
       )}
 
       {seo.image && <meta name="twitter:image" content={seo.image} />}
-      <link rel="canonical" href="https://www.pensamientovisual.es/" />
+      <link rel="canonical" href={seo.url} />
     </Helmet>
   )
 }
@@ -67,8 +69,8 @@ export default SEO
 
 SEO.propTypes = {
   title: PropTypes.string,
-  description: PropTypes.string,
-  image: PropTypes.string,
+  description: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  image: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
   article: PropTypes.bool,
 }
 
